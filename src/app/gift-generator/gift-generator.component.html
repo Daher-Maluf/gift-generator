@@ -1,0 +1,32 @@
+<h1>Gif Count</h1>
+<div class="container">
+  <div class="preview" [ngStyle]="{ 'background-color': backgroundColor }">
+    <span>{{ number.value }}</span>
+  </div>
+  <div class="content-wrapper">
+    <div class="inputs">
+      <div>
+        <div
+          colorPicker
+          [(colorPicker)]="backgroundColor"
+          [style.background]="backgroundColor"
+          class="custom-color-picker"
+        >
+        </div>
+      </div>
+
+      <div>
+        <input
+          class="custom-counter"
+          type="number"
+          id="number"
+          [formControl]="number"
+        />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button (click)="generarGif()">Create GIF</button> 
+    </div>
+  </div>
+</div>

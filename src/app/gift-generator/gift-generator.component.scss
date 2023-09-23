@@ -1,0 +1,87 @@
+.custom-color-picker {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: #333;
+  }
+}
+
+.custom-counter {
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px; 
+  background-color: #fff; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  width: 100px; 
+  height: 30px; 
+  outline: none;
+}
+
+
+.custom-counter:hover {
+  border-color: #333; 
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .inputs {
+    margin-top: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    button {
+      border: none;
+      border-radius: 10px;
+      width: 100% !important;
+      padding: 10px;
+      background-color: #12486b;
+      color: #fff;
+    }
+  }
+}
+
+.preview {
+  height: 150px;
+  width: 200px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
